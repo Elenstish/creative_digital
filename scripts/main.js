@@ -4,8 +4,9 @@ $(document).ready(function() {
 
 // --------- burger
 	$buttons = $('._navLinks');
-	$('._navLinks, .menu_link, .buttonmobile').click(function() {
+	$('._navLinks, ._burger').click(function() {
 	$buttons.toggleClass('active');
+    return;
 	});
 
 // --------- scroll down

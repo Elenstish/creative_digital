@@ -118,7 +118,6 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 	padding: 28px 0 10px;
-	color: @colorDark;
 }
 p {
 	font-family: @fontPTSans;
@@ -303,9 +302,23 @@ p {
 		max-width: 760px;
 		margin-left: 0 !important;
 		margin-right: 0 !important;
+		background: url("../img/unsplash.png") bottom right no-repeat;
+		background-size: cover;
+		position: relative;
+		z-index: 1;
+		color: @colorDark;
+		&:after {
+		    content: ' ';
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		    background-color: rgba(159, 154, 207, .5);
+		    z-index: -1;
+		}
 	}
 	&__description {
-		//max-width: 410px;
 		height: 100%;
 		padding-top: 110px;
 		text-align: center;
@@ -326,12 +339,16 @@ p {
 	&:nth-child(odd) {
 		background-color: darken(@bgColorLight, 10%);   
 	}
+	&:nth-child(even) {
+		background-color: @bgColorLight;   
+	}
 	&:hover {
     	border-radius: 30px;
     	border: 2px solid @colorLight;
-    	opacity: 0.8;
+    	background-color: rgba(0,0,0,.1);
     	box-shadow: 3px 3px 0.4em grey;
     	cursor: pointer;
+    	color: white;
     }
 }
 .services p {

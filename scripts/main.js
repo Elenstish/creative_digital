@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
 // --------- burger
@@ -64,10 +62,11 @@ $(document).ready(function() {
         		slidesToScroll: 1,
         		centerMode: false,
                 initialSlide: 0,
-      	}
+			}
     	}
-  	]
+  		]
 	});
+
 });
 
 

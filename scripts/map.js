@@ -16,7 +16,7 @@
         let marker = new google.maps.Marker({
             position: {lat: 41.165944, lng: -8.620105},
             map: map,
-            icon: "img/pin.png"
+            icon: "pointer.png"
         });
 
 

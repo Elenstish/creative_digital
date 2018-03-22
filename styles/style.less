@@ -55,10 +55,10 @@
 @fontPTSans: 'PT Sans', sans-serif;
 
 @colorLight: #fefefb;
-@colorDark: #665f60; 
+@colorDark: #665f60;
 
 @bgColor: #b6b3d7;
-@bgColorLight: #ebebeb; 
+@bgColorLight: #ebebeb;
 @bgFooter: #9f9acf;
 
 *, :after, :before {
@@ -75,6 +75,7 @@ body {
 main,
 .footer {
 	width: 100vw;
+	max-width: 100%;
 }
 .container {
 	margin-left: auto;
@@ -158,7 +159,7 @@ p {
 	@media only screen and (max-width: 991px) {
 		position: fixed;
 		width: 100%;
-		height: 100%; 
+		height: 100%;
 		z-index: 999;
 		top: 0;
 		right: 0;
@@ -171,7 +172,7 @@ p {
 }
 .overlay {
 	height: 100%;
-	//position: absolute;
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -213,7 +214,7 @@ p {
 }
 .buttonmobile {
 	position: absolute;
-	top: 26px;    
+	top: 26px;
 	right: 20px;
 	transition: .35s ease-out;
 	cursor: pointer;
@@ -247,7 +248,7 @@ p {
 		width: inherit;
 	}
 }
-.p__home {	
+.p__home {
 	font-size: 30px;
 	text-align: center;
 	font-style: italic;
@@ -278,7 +279,7 @@ p {
 		padding-right: 10px;
 	}
 	&__h2 {
-		margin: 42px 0;	
+		margin: 42px 0;
 	}
 }
 .link {
@@ -289,7 +290,7 @@ p {
 	color: #7d7a7c;
 	margin-top: 80px;
 	margin-right: auto;
-	margin-left: auto;    
+	margin-left: auto;
 	font-size: 20px;
 	font-style: italic;
 	text-align: center;
@@ -331,10 +332,10 @@ p {
 	transition: transform 2s;
 	position: relative;
 	&:nth-child(odd) {
-		background-color: darken(@bgColorLight, 10%);   
+		background-color: darken(@bgColorLight, 10%);
 	}
 	&:nth-child(even) {
-		background-color: @bgColorLight;   
+		background-color: @bgColorLight;
 	}
 	&:hover {
 		cursor: pointer;
@@ -428,7 +429,7 @@ p {
 	margin: 0 auto;
 	text-align: center;
 	background: @bgFooter;
-	padding: 19px 0;	
+	padding: 19px 0;
 	&__link {
 		margin: 0 6px;
 		display: inline-block;
@@ -441,7 +442,7 @@ p {
 .contact {
 	position: relative;
 	overflow: hidden;
-	background: @bgFooter;   
+	background: @bgFooter;
 	z-index: 2;
 	&__h2 {
 		color: @colorLight;
@@ -479,8 +480,8 @@ p {
 		margin-left: auto;
 		&:hover {
 			border-bottom: 2px solid #8783b0;
-			cursor: pointer;	
-			transform: translate(0, 5px); 
+			cursor: pointer;
+			transform: translate(0, 5px);
 		}
 	}
 	&__block {
@@ -496,7 +497,7 @@ p {
 		background: rgba(235,235,235,0.5);
 		padding-left: 91px;
 		&:hover {
-			transform: translateX(0)	
+			transform: translateX(0)
 		}
 	}
 	&__icon {
@@ -518,7 +519,7 @@ p {
 		font-size: 18px;
 		font-weight: 400;
 		text-align: center;
-		padding-top: 10px;	
+		padding-top: 10px;
 	}
 	&__number {
 		padding-top: 35px;
@@ -565,7 +566,7 @@ p {
 .contact__textarea {
 	height: 200px;
 	width: 100%;
-	padding-top: 25px;	
+	padding-top: 25px;
 }
 .contact__phone {
 	top: 245px;
@@ -593,7 +594,7 @@ p {
 	@media only screen and (max-width: 640px) {
 		width: 44px;
 		height: 44px;
-		position: fixed; //absolute;  
+		position: fixed; //absolute;
 		right: 52px;
 		bottom: 30px;
 	}
